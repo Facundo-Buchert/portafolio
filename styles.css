@@ -1,0 +1,316 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    scroll-behavior: smooth;
+    user-select: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    padding: 0;
+    background-color: #171615;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #171615;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 998;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav #menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav #menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav #menu li a:hover {
+    color: #c9721b;
+    transition: 0.5s;
+}
+
+.checkbtn{
+    font-size: 35px;
+    color: #c9721b;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#submenu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: transparent;
+}
+  
+  #contactIcons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+  
+  #contactIcons li {
+    margin-bottom: 10px;
+    background-color: #171615;
+}
+
+
+#contactIcons li a img{
+    height: 4vh;
+    margin: 0px;
+}
+
+section {
+    padding: 50px 0 -10px 0;
+}
+
+#about-me{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+#about-me div{
+    position: absolute;
+    width: 60%;
+    margin: auto;
+    margin-top: 15%;
+    top: -1%;
+}
+
+#name{
+    font-size: 6vh;
+    color: #c9721b;
+}
+
+.text{
+    color: #fff;
+    font-size: 2vh;
+}
+
+b{
+    color: #c9721b;
+}
+
+h2{
+    color: #c9721b;
+    line-height: 1.3em;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.proyect {
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.proyect img {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.proyect h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.proyect p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #e7e7e7;
+    padding: 0 10%;
+}
+
+
+
+#skills ul{
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+    margin:  0 auto 100px auto;
+    padding: 0;
+}
+
+#skills  li{
+    text-align:center;
+}
+
+#skills ul li img{
+    height: 6vh;
+}
+
+.buton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c9721b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #a35d17;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact form {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    background-color: #c9721b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+#contact form button:hover {
+    background-color: #a35d17;
+}
+
+footer {
+    background-color: #171615;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+  
+@media screen and (max-width: 768px) {
+    .checkbtn{
+        display: block;
+    }
+
+    header {
+        padding: 1% 6%;
+        z-index: 999;
+    }
+
+    #menu{
+        position: fixed;
+        width: 35vw;
+        height: 40vh;
+        background: #171615;
+        top: 40px;
+        margin-bottom: 100%;
+        left: 150vw;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 900;
+    }
+
+    nav #menu li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav #menu li a{
+        font-size: 18px;
+    }
+
+    nav #menu li a:hover {
+        background: none;
+        color: #c9721b;
+    }
+
+    #check:checked  ~ #menu {
+        left: 65vw;
+    }
+
+    #submenu{
+        position: absolute;
+    }
+
+    .proyect {
+        margin-bottom: 20px;
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+
+
+}
